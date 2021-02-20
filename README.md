@@ -4,5 +4,6 @@
 
 ACC, Jetpack, DataBinding
 
-DataBinding's Benefit : Improves the performance of the App
-                        Eliminate findViewById(), makes code concise, makes code easier to read and maintain.
+DataBinding's Benefit
+1. Improves the performance of the App.
+2. Eliminate findViewById(), makes code concise, makes code easier to read and maintain.
