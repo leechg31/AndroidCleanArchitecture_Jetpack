@@ -1,5 +1,6 @@
 # AndroidCleanArchitecture_Jetpack
-ACC, Jetpack, DataBinding
+
+21년 4월 중순까지 완성 할 예정 
 
 데이터바인딩 장점
 
