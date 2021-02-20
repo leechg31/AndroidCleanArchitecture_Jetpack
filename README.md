@@ -9,9 +9,9 @@ ACC, Jetpack, DataBinding
 
 데이터바인딩 하는 방법
 
-1. 안스 4.1 미만 에서는 gradle.app에 android에\n
-    dataBinding{\n
-      enabled = true\n
+1. 안스 4.1 미만 에서는 gradle.app에 android에
+    dataBinding{
+      enabled = true
     }
     
    4.1 이상에서는
