@@ -1,3 +1,5 @@
 # AndroidCleanArchitecture_Jetpack
 
-백단 관리는 SpringBoot로 해볼 예정입니다
+서버는 Springboot tomcat으로 할 예정입니다
+
+ACC, Jetpack, DataBinding
