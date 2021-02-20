@@ -9,9 +9,14 @@ ACC, Jetpack, DataBinding
 
 데이터바인딩 하는 방법
 
-1. 라이브러리 다운로드 : gradle.app에 android에 
+1. 안스 4.1 미만 에서는 gradle.app에 android에 
     dataBinding{
       enabled = true
+    }
+    
+   4.1 이상에서는
+    buildFeatures {
+        dataBinding = true
     }
     
 2. 해당 액티비티or프래그먼트의 레이아웃xml에서 전체 코드를 <layout></layout>으로 감싼다.
