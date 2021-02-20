@@ -25,3 +25,11 @@ ACC, Jetpack, DataBinding
 6. 레이아웃의 View는 화면구성 measuerments에 따라서 inflated되고 만들어지지만, 데이터바인딩의 경우 이러한 setContentView(R.layout.레이아웃)가 필요없다. 대신 바인딩 object로 같은 일을 수행할    수 있으며 더 효과적이고 효율적인 방도를 낼 수 있다.
 
 7. onCreate 생명주기의 setContentView(R.layout.blabla)을 binding = DataBindingUtil.setContentView(this, R.layout.레이아웃)
+
+8. 레이아웃xml의 각 컴포넌트의 id는 camel표기법으로 name_edit_text 이렇게 만들면 아까와 같이 nameEditText 이렇게 만들어진다.
+
+9. 이렇게 하면 findViewById()를 안쓰고 setOnClickListener와 같은 이벤트를 binding.nameEditText.setOnClickListener로 쓸 수 있다.
+
+10. 코틀린의 apply scoping 기능으로 dataBinding object의 반복을 없애줄 수 있다.
+
+11. binding.apply{}로 binding. 을 쓰지않고 그냥 id만 쓸 수 있다.
