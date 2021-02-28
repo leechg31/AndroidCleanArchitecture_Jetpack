@@ -1,14 +1,6 @@
 # AndroidCleanArchitecture_Jetpack
 
-21년 4월 중순까지 완성 할 예정 
-
-데이터바인딩 장점
-
-1. 앱 성능을 높인다.
-2. findViewById()질을 없앨 수 있고, 코드를 간결하고 읽기 쉽게 만들어주며 유지보수성을 높인다.
-3. 컴파일 시간에 에러를 인지할 수 있다.
-
-데이터바인딩 하는 방법
+DataBinding (Section2)
 
 1. 안스 4.1 미만 에서는 gradle.app에 android에
     dataBinding{
@@ -40,9 +32,11 @@
 
 11. binding.apply{}로 binding. 을 쓰지않고 그냥 id만 쓸 수 있다.
 
-Object DataBinding
+Object data DataBinding (Section2)
 
 1. data class를 생성하고 액티비티나 프래그먼트에 get 메소드를 생성
 2. layout xml에 data variable을 만들고 name과 type(객체 경로)를 입력한다
 3. 각 텍스트 및 버튼에 android:text="@{Object.name}"을 입력
 4. 액티비티 및 프래그먼트에 binding.dataname(2번의 name)=getObject()를 입력하고 사용!
+
+ViewModel (Section3)
