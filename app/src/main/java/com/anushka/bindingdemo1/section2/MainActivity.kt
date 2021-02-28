@@ -1,12 +1,10 @@
-package com.anushka.bindingdemo1
+package com.anushka.bindingdemo1.section2
 
-import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
+import android.view.View
 import androidx.databinding.DataBindingUtil
+import com.anushka.bindingdemo1.R
 import com.anushka.bindingdemo1.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -15,7 +13,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-
         binding.submitButton.setOnClickListener {
             displayGreeting()
         }
@@ -23,7 +20,15 @@ class MainActivity : AppCompatActivity() {
 
     private fun displayGreeting() {
         binding.apply {
+            if (progressBar.visibility == View.GONE) {
+                progressBar.visibility = View.VISIBLE
+                submitButton.text = "Stop"
+            } else {
+                progressBar.visibility = View.GONE
+                submitButton.text = "Start"
+            }
             greetingTextView.text = "Hello! " + nameEditText.text
         }
+
     }
 }

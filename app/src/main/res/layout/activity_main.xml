@@ -7,14 +7,14 @@
         android:id="@+id/name_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".section2.MainActivity">
 
         <TextView
             android:id="@+id/greeting_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/insert_you_name_here"
-            android:textSize="30sp"
+            android:textSize="30dp"
             android:textStyle="bold"
             android:typeface="sans"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -51,6 +51,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.613" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.471"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.295" />
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
