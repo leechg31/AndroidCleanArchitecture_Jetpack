@@ -39,3 +39,10 @@
 10. 코틀린의 apply scoping 기능으로 dataBinding object의 반복을 없애줄 수 있다.
 
 11. binding.apply{}로 binding. 을 쓰지않고 그냥 id만 쓸 수 있다.
+
+Object DataBinding
+
+1. data class를 생성하고 액티비티나 프래그먼트에 get 메소드를 생성
+2. layout xml에 data variable을 만들고 name과 type(객체 경로)를 입력한다
+3. 각 텍스트 및 버튼에 android:text="@{Object.name}"을 입력
+4. 액티비티 및 프래그먼트에 binding.dataname(2번의 name)=getObject()를 입력하고 사용!
