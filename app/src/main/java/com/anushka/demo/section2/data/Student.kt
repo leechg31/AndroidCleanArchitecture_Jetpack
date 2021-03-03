@@ -1,4 +1,4 @@
-package com.anushka.bindingdemo1.section2
+package com.anushka.demo.section2.data
 
 data class Student(
     var id: Int,

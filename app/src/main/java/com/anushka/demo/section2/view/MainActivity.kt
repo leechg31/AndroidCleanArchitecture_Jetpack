@@ -1,18 +1,20 @@
-package com.anushka.bindingdemo1.section2
+package com.anushka.demo.section2.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.databinding.DataBindingUtil
-import com.anushka.bindingdemo1.R
-import com.anushka.bindingdemo1.databinding.ActivityMainBinding
+import com.anushka.demo.R
+import com.anushka.demo.databinding.Section2ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: Section2ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(this, R.layout.section2_activity_main)
+
+
         binding.submitButton.setOnClickListener {
             displayGreeting()
         }
@@ -29,6 +31,5 @@ class MainActivity : AppCompatActivity() {
             }
             greetingTextView.text = "Hello! " + nameEditText.text
         }
-
     }
 }
