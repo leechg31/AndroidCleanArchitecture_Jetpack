@@ -18,6 +18,7 @@
         </activity>
         <activity android:name="com.anushka.demo.section2.view.SecondActivity"/>
         <activity android:name=".section3.view.MainActivity"/>
+        <activity android:name=".section3.view.SecondActivity"/>
     </application>
 
 </manifest>
