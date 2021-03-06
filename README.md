@@ -1,5 +1,9 @@
 # AndroidCleanArchitecture_Jetpack
 
+
+학습 정리 블로그 : https://dduntorry.tistory.com/category/Android
+
+
 DataBinding (Section2)
 
 1. 안스 4.1 미만 에서는 gradle.app에 android에
