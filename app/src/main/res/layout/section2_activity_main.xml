@@ -7,7 +7,7 @@
         android:id="@+id/name_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".section2.view.MainActivity">
+        tools:context=".section2.view.MainActivity2">
 
         <TextView
             android:id="@+id/greeting_text_view"
@@ -70,7 +70,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="72dp"
-            android:text="Button"
+            android:text="다음"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

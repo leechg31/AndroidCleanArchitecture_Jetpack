@@ -2,7 +2,7 @@ package com.anushka.demo.section3.viewmodel
 
 import androidx.lifecycle.ViewModel
 
-class MainActivityViewModel: ViewModel() {
+class MainActivity3ViewModel: ViewModel() {
     private var count = 0
 
     fun getCurrentCount():Int{

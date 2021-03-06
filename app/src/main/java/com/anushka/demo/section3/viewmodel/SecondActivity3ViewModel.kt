@@ -2,7 +2,7 @@ package com.anushka.demo.section3.viewmodel
 
 import androidx.lifecycle.ViewModel
 
-class SecondActivityViewModel:ViewModel() {
+class SecondActivity3ViewModel:ViewModel() {
     private var total = 0
 
     fun getTotal(): Int {
